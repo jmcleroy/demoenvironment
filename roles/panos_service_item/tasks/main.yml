@@ -2,7 +2,6 @@
 - name: create a global service
   panos_object:
     ip_address: '{{ inventory_hostname }}'
-    username: '{{ username }}'
     password: '{{ password }}'
     operation: 'add'
     serviceobject: "{{ service_name }}"
