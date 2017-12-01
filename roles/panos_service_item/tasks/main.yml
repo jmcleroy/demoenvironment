@@ -1,7 +1,8 @@
 ---
-- name: create SSH service
-  panos_service:
+- name: create a global service 
+  panos_object:
     ip_address: '{{ inventory_hostname }}'
-    service_name: "{{ service_name }}"
+    operation: 'add'
+    serviceobject: "{{ service_name }}"
+    destination_port: "{{ port_number }}"
     protocol: "{{ protocol }}"
-    port: "{{ port_number }}"
