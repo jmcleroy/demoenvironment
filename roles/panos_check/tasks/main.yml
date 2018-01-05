@@ -1,0 +1,6 @@
+---
+- name: Check Panos
+  panos_check:
+    ip_address: '{{ inventory_hostname }}'
+    username: admin
+    password: admin
