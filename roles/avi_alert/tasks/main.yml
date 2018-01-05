@@ -8,4 +8,4 @@
     name: sample_alertconfig
     category: REALTIME
     source: METRICS
-    alert_rule: all
+    alert_rule: 5
