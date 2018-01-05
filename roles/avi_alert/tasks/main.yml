@@ -1,11 +1,8 @@
 ---
-- name: Example to create AlertConfig object
-  avi_alertconfig:
+- name: Example to create BackupConfiguration object
+  avi_backupconfiguration:
     controller: "{{ inventory_hostname }}"
     username: admin
     password: admin
     state: present
-    name: sample_alertconfig
-    category: REALTIME
-    source: METRICS
-    alert_rule: false
+    name: sample_backupconfiguration
