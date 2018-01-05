@@ -1,0 +1,8 @@
+---
+- name: Example to create AlertConfig object
+  avi_alertconfig:
+    controller: {{ inventory_hostname }}
+    username: admin
+    password: admin
+    state: present
+    name: sample_alertconfig
