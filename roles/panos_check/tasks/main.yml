@@ -4,4 +4,4 @@
     ip_address: '{{ inventory_hostname }}'
     username: admin
     password: admin
- 
+    timeout: no
